@@ -28,7 +28,8 @@ export default function LoginPage() {
 
   return (
     <div className="auth-box">
-      <h1>Login</h1>
+      <h1>Welcome back</h1>
+      <p>Log in to open your dashboard.</p>
       <form onSubmit={handleLogin}>
         <input
           type="email"
@@ -47,7 +48,7 @@ export default function LoginPage() {
         <button type="submit">Login</button>
       </form>
       {message && <p className="error">{message}</p>}
-      <p>
+      <p className="switch">
         No account yet? <Link href="/register">Register</Link>
       </p>
     </div>

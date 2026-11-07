@@ -30,7 +30,8 @@ export default function RegisterPage() {
 
   return (
     <div className="auth-box">
-      <h1>Register</h1>
+      <h1>Create account</h1>
+      <p>Sign up to become a member.</p>
       <form onSubmit={handleRegister}>
         <input
           value={fullname}
@@ -49,14 +50,14 @@ export default function RegisterPage() {
           type="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
-          placeholder="Password"
+          placeholder="Password (min 6 characters)"
           minLength={6}
           required
         />
         <button type="submit">Register</button>
       </form>
       {message && <p className="error">{message}</p>}
-      <p>
+      <p className="switch">
         Already have an account? <Link href="/login">Login</Link>
       </p>
     </div>
