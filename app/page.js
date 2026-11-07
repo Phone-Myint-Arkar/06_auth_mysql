@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <div className="auth-box">
       <h1>Auth Demo</h1>
+      <p>Welcome to the Auth Demo!</p>
       <ul>
         <li><Link href="/register">Register</Link></li>
         <li><Link href="/login">Login</Link></li>
